@@ -32,7 +32,7 @@ export default class InquiryManagerScreen extends Component {
     modalVisible: false,
   };
 
-  componentDidMount(): void {
+  componentDidMount() {
     requestGet(Net.inquiry.get)
       .then(json => {
         this.setState({data: json.data});

@@ -18,7 +18,7 @@ export default class MarketSearchArea extends Component {
       return Object.assign(item, {key: index});
     });
   };
-  componentDidMount(): void {
+  componentDidMount() {
     requestPost(Net.marketSearch.getAreaList, null)
       .then(json => {
         let areaList = [];

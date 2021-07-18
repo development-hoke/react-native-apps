@@ -52,7 +52,7 @@ export default class CarryingTool extends Component {
     item: null,
   };
 
-  componentDidMount(): void {
+  componentDidMount() {
     requestPost(Net.manual.tool)
       .then(json => {
         this.setState({manuals: json.manuals});

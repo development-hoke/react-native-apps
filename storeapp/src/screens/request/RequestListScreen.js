@@ -43,7 +43,7 @@ export default class RequestListScreen extends Component {
     item: null, // Selected notice or coupon
   };
 
-  componentDidMount(): void {
+  componentDidMount() {
     requestGet(Net.coupon.get)
       .then(json => {
         this.setState({coupons: json.data});

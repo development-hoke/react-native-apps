@@ -141,7 +141,7 @@ export default class MemberRegister extends Component {
     }
   };
 
-  componentDidMount(): void {
+  componentDidMount() {
     if (this.props.navigation.state.params.memberId !== 0)
     {
       let memberData = this.props.navigation.state.params.memberData;

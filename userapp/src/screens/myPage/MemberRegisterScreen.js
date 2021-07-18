@@ -43,7 +43,7 @@ export default class MemberRegister extends Component {
       device_id: GlobalState.deviceId,
     };
   }
-  componentDidMount(): void {
+  componentDidMount() {
     let tmp = false;
     AsyncStorage.getItem(ASYNC_PARAMS.IS_LOGIN, (error, result) => {
       if (result) tmp = true;

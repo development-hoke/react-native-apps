@@ -23,7 +23,7 @@ export default class SettingMenu extends Component {
         GlobalState.myInfo.member_no.substr(-5),
     };
   }
-  componentDidMount(): void {
+  componentDidMount() {
     const settingMenuList = [
       {
         callback: () => {

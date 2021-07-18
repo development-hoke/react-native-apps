@@ -76,7 +76,7 @@ class LoginScreen extends Component {
   //   }
   //   BackHandler.exitApp();
   // };
-  // componentDidMount(): void {
+  // componentDidMount() {
   //   this._backPress = 0;
   //   this.navigationFocusLisener = this.props.navigation.addListener(
   //     'willFocus',
@@ -94,7 +94,7 @@ class LoginScreen extends Component {
   //     },
   //   );
   // }
-  // componentWillUnmount(): void {
+  // componentWillUnmount() {
   //   this.navigationBlurListener.remove();
   //   this.navigationFocusLisener.remove();
   //   if (this.backHandler) this.backHandler.remove();

@@ -21,10 +21,10 @@ class CalendarSchedule extends Component {
       scheduleBody: null,
     };
   }
-  componentDidMount(): void {
+  componentDidMount() {
     this.initCalendar(LOAD_CALENDAR_TYPE.ONLY_DATE);
   }
-  componentWillUnmount(): void {
+  componentWillUnmount() {
     GlobalState.canReserve = true;
   }
   clearScheduleData = () => {

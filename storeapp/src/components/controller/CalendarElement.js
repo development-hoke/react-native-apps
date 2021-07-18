@@ -16,7 +16,7 @@ class HeaderCell extends Component {
     super(props);
     this.state = {isWeekEnd: false};
   }
-  componentDidMount(): void {
+  componentDidMount() {
     if (this.props.dayOfWeekNum == 6 || this.props.dayOfWeekNum == 0) {
       this.setState({isWeekEnd: true});
     }
@@ -208,7 +208,7 @@ class ScheduleCell extends Component {
     }
   };
 
-  componentDidMount(): void {
+  componentDidMount() {
     if (this.props.type == 'none') this.setState({isNone: true});
     if (this.props.type == 'cancel') this.setState({isCancel: true});
     if (this.props.type == 'OK') this.setState({isOK: true});

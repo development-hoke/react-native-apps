@@ -52,7 +52,7 @@ export default class ManualScreen extends Component {
     item: null,
   };
 
-  componentDidMount(): void {
+  componentDidMount() {
     requestPost(Net.manual.get)
       .then(json => {
         this.setState({manuals: json.manuals});

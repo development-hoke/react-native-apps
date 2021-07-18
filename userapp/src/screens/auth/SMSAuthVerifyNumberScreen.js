@@ -54,7 +54,7 @@ class SMSAuthVerifyNumber extends Component {
         alertNetworkError(err);
       });
   };
-  componentDidMount(): void {
+  componentDidMount() {
     if (IS_DEV_MODE) {
       Alert.alert('Test Alert', GlobalState.verifyNumber);
     }

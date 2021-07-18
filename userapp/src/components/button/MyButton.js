@@ -8,7 +8,7 @@ export default class MyButton extends Component {
     super(props);
     this.state = {isActive: false};
   }
-  // componentDidMount(): void {
+  // componentDidMount() {
   //   console.log(this.props.iconList);
   //   this.setState({icon: this.props.iconList.inactive});
   // }

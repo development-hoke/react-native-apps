@@ -13,7 +13,7 @@ export default class MarketSearchMarket extends Component {
     super(props);
     this.state = {data: []};
   }
-  componentDidMount(): void {
+  componentDidMount() {
     requestPost(Net.marketSearch.getShopByArea, {
       areaID: this.props.navigation.state.params.passParam.areaID,
     })

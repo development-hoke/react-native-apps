@@ -67,7 +67,7 @@ export default class BottleManagerScreen extends Component {
     modalVisible: false,
   };
 
-  componentDidMount(): void {
+  componentDidMount() {
     requestPost(Net.bottle.get, {
       id: this.props.navigation.state.params.memberId,
     })

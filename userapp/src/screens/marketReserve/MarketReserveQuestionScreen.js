@@ -22,7 +22,7 @@ export default class MarketReserveQuestion extends Component {
       contentOfQuery: '',
     };
   }
-  componentDidMount(): void {
+  componentDidMount() {
     // requestPost(Net.marketReserve.getShops)
     //   .then(json => {
     //     let shopList = [];

@@ -28,7 +28,7 @@ export default class AgreePolicyScreen extends Component {
       allowPrivacy: true,
     };
   }
-  componentDidMount(): void {
+  componentDidMount() {
     this.loadData();
     if (this.props.navigation.state.params) {
       if (this.props.navigation.state.params.isUse) {

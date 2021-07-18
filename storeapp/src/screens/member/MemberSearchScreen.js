@@ -21,7 +21,7 @@ export default class MemberSearchScreen extends Component {
     code: '',
   };
 
-  componentDidMount(): void {
+  componentDidMount() {
     this.refresh = this.props.navigation.addListener('willFocus', () => {
       if (this.props.navigation.state.params) {
         this.setState({code: this.props.navigation.state.params.code});
@@ -29,7 +29,7 @@ export default class MemberSearchScreen extends Component {
     });
   }
 
-  componentWillUnmount(): void {
+  componentWillUnmount() {
     this.refresh.remove();
   }
 

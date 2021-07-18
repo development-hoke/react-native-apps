@@ -74,7 +74,7 @@ class MarketReserveSchedule extends Component {
         .catch(err => alertNetworkError(err));
     }
   };
-  componentDidMount(): void {
+  componentDidMount() {
     if (this.props.navigation.state.params) {
       this.setState(
         {hopeMarket: this.props.navigation.state.params.shopID},

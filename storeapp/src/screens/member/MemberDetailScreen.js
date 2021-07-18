@@ -107,7 +107,7 @@ export default class MemberDetail extends Component {
     bottleModalVisible: false,
   };
 
-  componentDidMount(): void {
+  componentDidMount() {
     this.refresh = this.props.navigation.addListener('willFocus', () => {
       requestPost(Net.member.get, {
         id: this.props.navigation.state.params.memberId,
@@ -131,7 +131,7 @@ export default class MemberDetail extends Component {
         });
     });
   }
-  componentWillUnmount(): void {
+  componentWillUnmount() {
     this.refresh.remove();
   };
 

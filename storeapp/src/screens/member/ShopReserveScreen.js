@@ -32,7 +32,7 @@ export default class ShopReserve extends Component {
   }
 
 
-  componentDidMount(): void {
+  componentDidMount() {
     this.refesh = this.props.navigation.addListener('willFocus', () => {
       requestPost(Net.marketReserve.getReservedDataByShop, {
         shopID: GlobalState.shopId,
@@ -49,7 +49,7 @@ export default class ShopReserve extends Component {
     });
   }
 
-  componentWillUnmount(): void {
+  componentWillUnmount() {
     this.refesh.remove();
   }
 

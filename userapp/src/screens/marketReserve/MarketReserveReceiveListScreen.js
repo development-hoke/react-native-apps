@@ -24,7 +24,7 @@ export default class MarketReserveReceiveList extends Component {
       return Object.assign(item, {isRead: isRead});
     });
   };
-  componentDidMount(): void {
+  componentDidMount() {
     this.reload = this.props.navigation.addListener('willFocus', () => {
       requestPost(Net.marketReserve.getQuestionList, {
         customerID: GlobalState.myInfo.id,
@@ -39,7 +39,7 @@ export default class MarketReserveReceiveList extends Component {
         .catch(err => alertNetworkError(err));
     });
   }
-  componentWillUnmount(): void {
+  componentWillUnmount() {
     this.reload.remove();
   }
 

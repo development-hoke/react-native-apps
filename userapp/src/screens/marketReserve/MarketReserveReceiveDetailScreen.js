@@ -6,7 +6,7 @@ import {alertNetworkError, Net, requestPost} from '../../utils/APIUtils';
 import GlobalState from '../../mobx/GlobalState';
 
 export default class MarketReserveReceiveDetail extends Component {
-  componentDidMount(): void {
+  componentDidMount() {
     requestPost(Net.marketReserve.setInquiryRead, {
       customerID: GlobalState.myInfo.id,
       inquiryID: this.props.navigation.state.params.inquiry.id,
