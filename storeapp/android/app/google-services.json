@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "154129111918",
+    "project_id": "haruto-fcm",
+    "storage_bucket": "haruto-fcm.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:154129111918:android:2973f5e04b4f9145f57f7f",
+        "android_client_info": {
+          "package_name": "com.coating.store"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "154129111918-2d457nasf7lvgnro3ql9s18f2conac9i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAqFZOA-kHSYR6ePDWH66CFRmV32T-ytCE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "154129111918-2d457nasf7lvgnro3ql9s18f2conac9i.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

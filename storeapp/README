@@ -1,0 +1,23 @@
+1. react-native-vector-icons의 리용
+ 1) react-native-vector-icons를 리용하려면 packages.json에 모듈을 추가한 다음 콘솔에서
+    react-native link
+    react-native link react-native-vector-icons
+    를 실행할것.
+
+ 2) android/app/build.gradle화일의 제일 마지막에
+    apply from: file("../../node_modules/react-native-vector-icons/fonts.gradle");
+    을 추가할것.
+
+2. storeapp에서의 단추속성리용
+ 1) 단추의 그림을 리용할때 될수록 아이콘을 리용할것. 아이콘이름은 Metronic에서 제공하느 FontAwesome아이콘의 이름을 줄것.
+ 2) 단추의 양상을 위하여 none, primary, secondary, warning, info, danger, success가 추가됨.
+    type를 우의 문자렬들중 하나로 선정하여 리용가능함.
+ 3) storeapp는 양상은 크게 가리지 않으므로 문서에 있는 테두리두께, 테두리모서리처리 등 을 고려하지 말고 한가지 값으로 줄것
+    테두리두께는 1(borderWidth: 1), 테두리모서리는 반경 5(borderRadius: 5)로 일치시킬것.
+
+3. react-native-camera를 리용할 때
+    app/build.gradle화일에서 dependencies부분에 다음과 같은 조작을 해줄것.
+    dependencies {
+        implementation project(path: ':react-native-camera', configuration: 'default')
+        ...
+    }
